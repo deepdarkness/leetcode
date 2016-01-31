@@ -13,7 +13,6 @@ class Solution(object):
         """
         if not root:
             return
-
         def travel(point):
             left_side = []
             tmp = point
