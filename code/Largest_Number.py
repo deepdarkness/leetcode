@@ -17,8 +17,3 @@ class Solution(object):
         if not tmp:
             tmp = "0"
         return tmp
-
-
-if __name__ == '__main__':
-    s = Solution()
-    print s.largestNumber([3, 30, 34, 5, 9])
