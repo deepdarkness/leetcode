@@ -4,10 +4,9 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
-        bought=-99999
-        sale=0
-        cooldown=0
+        bought = -99999
+        sale = 0
+        cooldown = 0
         for i in prices:
-            bought,sale,cooldown=max(bought,sale-i),max(sale,cooldown),bought+i
-        return max(sale,cooldown)
-
+            bought, sale, cooldown = max(bought, sale - i), max(sale, cooldown), bought + i
+        return max(sale, cooldown)
