@@ -5,6 +5,7 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
+
         nums.sort()
         l = len(nums)
         a = b = c = 0
@@ -29,3 +30,7 @@ class Solution(object):
                     b += 1
             a += 1
         return ans
+
+
+
+
