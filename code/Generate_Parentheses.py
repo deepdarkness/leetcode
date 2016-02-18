@@ -21,7 +21,3 @@ class Solution(object):
 
         travel('', n, n)
         return ans
-
-if __name__ == '__main__':
-    s=Solution()
-    print s.generateParenthesis(1)
