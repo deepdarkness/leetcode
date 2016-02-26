@@ -30,7 +30,3 @@ class Solution(object):
                     b += 1
             a += 1
         return ans
-
-
-
-
