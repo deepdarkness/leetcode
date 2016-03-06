@@ -11,16 +11,16 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
-        if root == None:
+        if root is None:
             return 0
         depth = 0
         list_vet = [root]
         while len(list_vet) != 0:
             for i in range(len(list_vet)):
                 a = list_vet.pop(0)
-                if a.left != None:
+                if a.left is not None:
                     list_vet += [a.left]
-                if a.right != None:
+                if a.right is not None:
                     list_vet += [a.right]
             depth += 1
         return depth
