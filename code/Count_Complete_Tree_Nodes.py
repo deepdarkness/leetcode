@@ -32,15 +32,15 @@ class Solution(object):
                     tmp = tmp.right
             return tmp
 
-        if minans+1==maxans:
+        if minans + 1 == maxans:
             return 1
-        while minans<maxans:
+        while minans < maxans:
             mid = (minans + maxans) // 2
             s = bin(mid)[2:]
             s = "0" * (maxlevel - len(s)) + s
             if check(s):
-                minans = mid+1
+                minans = mid + 1
             else:
                 maxans = mid
 
-        return (2 ** maxlevel - 1) +minans
+        return (2 ** maxlevel - 1) + minans
