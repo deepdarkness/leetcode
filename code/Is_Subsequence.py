@@ -14,8 +14,3 @@ class Solution(object):
                 if len(s) == s_ptr:
                     return True
         return False
-
-
-
-s = Solution()
-print(s.isSubsequence("axc", 'ahbgdc'))
