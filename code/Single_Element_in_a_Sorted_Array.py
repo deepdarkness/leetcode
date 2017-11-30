@@ -16,3 +16,4 @@ class Solution(object):
                 p = i
                 switch = True
         return nums[-1]
+
